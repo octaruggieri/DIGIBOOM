@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGIBOM</title>
+    <!-- ------------- ESTILOS CSS ----------- -->
+    <link rel="stylesheet" href="dashboard.css">
+
+    <!-- ----------------- BOXICONS -------------- -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="images/logo.png" alt="logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">DigiBom</span>
+                    <span class="profession">Automatización</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <!-- <li class="search-box">
+                        <i class='bx bx-search'></i>
+                        <input type="search" placeholder="Buscar...">
+                </li> -->
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a onclick="window.location.href = '../dashboardQR/main.html '">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a onclick="window.location.href = '../dashboardQR/qr.html '">
+                            <i class='bx bx-qr-scan icon'></i>
+                            <span class="text nav-text">Mis QR</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-customize icon'></i>
+                            <span class="text nav-text">Planes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-support icon'></i>
+                            <span class="text nav-text">Soporte</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            
+
+
+            <div class="bottom-content">
+            <li class="">
+                <a onclick="window.location.href = '../login/index.html '">
+                    <i class='bx bx-log-out icon'></i>
+                    <span class="text nav-text">Salir</span>
+                </a>
+            </li>
+
+            <li class="mode">
+                <div class="moon-sun">
+                    <i class='bx bx-moon icon moon'></i>
+                    <i class='bx bx-sun icon sun'></i>
+                </div>
+                <span class="mode-text text">Modo Oscuro</span>
+
+                <div class="toggle-switch">
+                    <span class="switch"></span>
+                </div>
+            </li>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="home">
+        <div class="text">Inicio</div>
+        <h1 class="welcome"><span>Bienvenidos</span> a la mejor plataforma para <br> gestión de tus QR</h1>
+        <div class="welcome">
+            <img src="images/logo.png" alt="logo">
+        </div>
+    </section>
+
+
+
+
+<script src="dashboard.js"></script>
+</body>
+</html>
