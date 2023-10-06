@@ -414,27 +414,78 @@ body.dark .switch::before{
    font-weight: 400;
    color: var(--text-color);
    padding: 8px 4px;
-   
+}
+
+.image-box p span{
+   font-weight: 600;
    
 }
+
+.detalle-mas {
+   display: none;
+}
+
+
+ul {
+   list-style: none;
+   padding: 0;
+}
+
+li {
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+   text-align: center;
+   font-size: 12px; 
+   padding: 4px 10px;
+   padding-inline: 10px;
+   color: var(--text-color);
+   padding: 10px 10px;
+   justify-content: center;
+}
+
+li img {
+   max-width: 80px; /* Ajusta el tamaño según tus necesidades */
+   max-height: 80px; /* Ajusta el tamaño según tus necesidades */
+   margin-right: 10px;
+}
+
+li img:hover {
+   /* Estilos adicionales al pasar el mouse sobre la imagen */
+   opacity: 0.7;
+   transition: opacity 0.3s;
+}
+
+.detalle-mas span{
+   font-weight: 600;
+}
+
+.ver-mas-button {
+   background-color: #007bff; /* Color de fondo */
+   color: #fff; /* Color del texto */
+   border: none; /* Sin borde */
+   padding: 10px 20px; /* Espaciado interno */
+   border-radius: 5px; /* Bordes redondeados */
+   font-size: 16px; /* Tamaño de fuente */
+   cursor: pointer; /* Cambia el cursor al pasar el mouse */
+   transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.ver-mas-button:hover {
+   background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}
+
+
+.detalle-mas {
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.9s ease-in-out; /* Agrega una transición suave */
+}
+
+
 
 
 /* ========================= MEMBRESIAS ========================== */
-/* .image-container  .membership-card{
-   display: flex;
-   gap: 30px;
-   flex-direction: column;
-   padding: 10px 20px;
-   background: var(--body-color);
-}
-
-
-.membership-card p{
-   font-size: 40px;
-   font-weight: 600;
-} */
-
-
 .membership-card {
    border: 1px solid #ccc;
    padding: 30px;
@@ -444,16 +495,20 @@ body.dark .switch::before{
    background-color: #f9f9f9;
    border-radius: 10px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   background: var(--body-color);
+   transition: all 0.5s ease;
 }
 
-.membership-card h2 {
-   font-size: 24px;
-   margin-bottom: 10px;
-   color: #333;
+.membership-card  h2 {
+   font-size: 26px;
+   font-weight: 700;
+   color: var(--text-color);
+   padding: 10px 10px;
+   justify-content: center;
 }
 
 .membership-card .price {
-   font-size: 28px;
+   font-size: 33px;
    font-weight: bold;
    color: #417ba1;
 }
