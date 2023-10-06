@@ -381,7 +381,7 @@ body.dark .switch::before{
 }
 
 .image-box img {
-   width: 200px;
+   width: 150px;
 }
 
 /* Estilos para el título y la descripción dentro del recuadro */
@@ -403,17 +403,18 @@ body.dark .switch::before{
 
 .image-box h2 {
    margin-top: 10px;
-   font-size: 25px;
+   font-size: 22px;
    font-weight: 700;
    color: var(--text-color);
    justify-content: center;
 }
 
 .image-box p {
-   font-size: 20px;
+   font-size: 15px;
    font-weight: 400;
    color: var(--text-color);
    padding: 8px 4px;
+   
 }
 
 .image-box p span{
@@ -431,10 +432,10 @@ ul {
    padding: 0;
 }
 
-li {
-   display: flex;
+.partes li {
+   display: block;
    align-items: center;
-   margin-bottom: 10px;
+   margin-bottom: 20px;
    text-align: center;
    font-size: 12px; 
    padding: 4px 10px;
@@ -442,6 +443,7 @@ li {
    color: var(--text-color);
    padding: 10px 10px;
    justify-content: center;
+   margin-top: 50px;
 }
 
 li img {
@@ -469,6 +471,7 @@ li img:hover {
    font-size: 16px; /* Tamaño de fuente */
    cursor: pointer; /* Cambia el cursor al pasar el mouse */
    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+   margin-top: 20px;
 }
 
 .ver-mas-button:hover {
@@ -481,7 +484,6 @@ li img:hover {
    overflow: hidden;
    transition: max-height 0.9s ease-in-out; /* Agrega una transición suave */
 }
-
 
 
 
